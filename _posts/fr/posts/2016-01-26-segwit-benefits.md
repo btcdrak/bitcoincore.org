@@ -1,17 +1,17 @@
 ---
-layout: post
 type: posts
+layout: post
 lang: fr
 name: segwit-benefits
 id: fr-segwit-benefits
 title: Avantages de "Segregated Witness"
 permalink: /fr/2016/01/26/segwit-benefits/
 version: 1
-excerpt: Cette page récapitule tous les avantages apportés par "segregated witness" qui vont bien au-delà d'une simple augmentation de la capacité de la blockchain.
+excerpt: Cette page résume certains des avantages apportés par segregated witness.
 ---
 {% include _toc.html %}
 
-Le soft-fork Segregated Witness (Segway) comprend un large éventail de fonctionnalités, dont beaucoup sont très techniques.  Cette page résume certains des avantages de ces fonctionnalités qui vont au-delà d'une simple augmentation de la capacité de la blockchain.
+Le soft-fork Segregated Witness (segwit) comprend un large éventail de fonctionnalités, dont beaucoup sont d'un niveau technique élevé.  Cette page récapitule certains des avantages apportés par ces fonctionnalités.
 
 ## Correctifs de la malléabilité
 
@@ -155,6 +155,15 @@ Séparer les données de signature du reste du bloc permet aux nœuds qui ne son
 
 Au plus les transactions utiliseront des adresses segwit, au plus les personnes qui font tourner des noeuds SPV ou 'pruned' pourront fonctionner en consommant moins de bande passante et d'espace disque.
 
+## Augmentation de la capacité/taille des blocs
+
+Comme les anciens nœuds ne téléchargeront que le bloc de base sans les "témoins", ils appliqueront uniquement la règle limitant la taille maximum des blocs à 1 Mo sur ces données.
+Les nouveaux nœuds sachant interpréter le bloc complet incluant  les données "témoin" peuvent donc remplacer cette limite par une nouvelle permettant d'obtenir des blocs de plus grande taille.  Segregated witness tire profit de cette possibilité pour augmenter la taille limite des blocs à presque 4 Mo, et ajoute une nouvelle limite de coût pour s'assurer que le traitement des blocs reste raisonnable dans l'utilisation des ressources (cela se traduit au final par une limite réelle plus proche des 1,6 à 2 Mo).
+
+### Qui en profite ?
+
+Les personnes faisant tourner des portefeuilles mis à jour pourront profiter d'une augmentation de la taille des blocs en déplaçant les données de signature dans la partie "témoin" de la transaction.
+
 ## Vers une seule limite unifée de la taille des blocs
 
 Actuellement, le consensus impose deux règles qui concernent la taille des blocs : la taille du bloc ne peut pas être supérieure à 1 Mo et il ne peut y avoir plus de 20.000 vérifications de signatures effectuées pour l'ensemble des transactions du bloc.
@@ -163,7 +172,7 @@ Trouver la sélection de transactions la plus rentable à inclure dans un bloc a
 
 Il est impossible de résoudre ce problème sans un hardfork ou une diminution significative de la taille des blocs.  Segwit ne pouvant pas non plus résoudre ce problème, il se contente de ne pas l'aggraver : en particulier, plutôt que d'introduire une nouvelle limite spécifique pour les données witness, segwit applique une seule limite qui combine le poids des données UTXO et des données witness, permettant aux deux d'être limités simultanément comme une seule entité combinée.
 
-## Qui en profite ?
+### Qui en profite ?
 
 En fin de compte, ce sont les mineurs qui en profiteront si à l'avenir un hardfork définit la taille limite des blocs comme une simple somme pondérée de paramètres. Par exemple:
 

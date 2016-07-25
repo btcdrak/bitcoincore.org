@@ -10,6 +10,20 @@ en:
       about:
         title: "About Us"
         url:   "/en/about/"
+      team:
+        title: "Team"
+        url:   "/en/team/"
+      projects:
+        title: "Sponsorship"
+        url: "/en/about/sponsorship/programme/"
+        submenu: true
+        tree:
+          programme:
+            title: "programme"
+            url: "/en/about/sponsorship/programme/"
+          faq:
+            title: "FAQ"
+            url: "/en/about/sponsorship/faq/"
       supporters:
         title: "Supporters"
         url:   "/en/supporters"
@@ -32,6 +46,12 @@ en:
        optin-rbf:
          title: "Opt-in RBF"
          url: "/en/faq/optin_rbf"
+       compact-blocks:
+         title: "Compact Blocks"
+         url: "/en/2016/06/07/compact-blocks-faq/"
+       version-bits:
+         title: "Version Bits (BIP9)"
+         url: "/en/2016/06/08/version-bits-miners-faq/"
   dev:
     title: "Development"
     submenu: true
@@ -54,6 +74,16 @@ en:
       eol:
         title: "Lifecycle"
         url:   "/en/lifecycle"
+  contact:
+      title: "Contact"
+      submenu: true
+      tree:
+        contact_us:
+          title: "Contact Us"
+          url: "/en/contact"
+        announcements:
+          title: "Announcements"
+          url: "/en/list/announcements/join"
 de:
   home:
     title: "Bitcoin Core"
@@ -65,6 +95,20 @@ de:
       about:
         title: "Über uns"
         url:   "/de/about/"
+      team:
+        title: "Team"
+        url:   "/en/team/"
+      projects:
+        title: "Sponsorship"
+        url: "/en/about/sponsorship/programme/"
+        submenu: true
+        tree:
+          programme:
+            title: "programme"
+            url: "/en/about/sponsorship/programme/"
+          faq:
+            title: "FAQ"
+            url: "/en/about/sponsorship/faq/"
       supporters:
         title: "Unterstützer"
         url:   "/en/supporters"
@@ -87,6 +131,12 @@ de:
        optin-rbf:
          title: "Opt-in RBF"
          url: "/en/faq/optin_rbf"
+       compact-blocks:
+         title: "Compact Blocks"
+         url: "/en/2016/06/07/compact-blocks-faq/"
+       version-bits:
+         title: "Version Bits (BIP9)"
+         url: "/en/2016/06/08/version-bits-miners-faq/"
   dev:
     title: "Entwicklung"
     submenu: true
@@ -109,6 +159,16 @@ de:
       eol:
         title: "Lifecycle"
         url:   "/en/lifecycle"
+  contact:
+      title: "Kontakt"
+      submenu: true
+      tree:
+        contact_us:
+          title: "Kontaktiere uns"
+          url: "/en/contact"
+        announcements:
+          title: "Ankündigungen"
+          url: "/en/list/announcements/join"
 es:
   home:
     title: "Bitcoin Core"
@@ -120,6 +180,20 @@ es:
       about:
         title: "Sobre Nosotros"
         url:   "/es/about/"
+      team:
+        title: "Team"
+        url:   "/en/team/"
+      projects:
+        title: "Sponsorship"
+        url: "/en/about/sponsorship/programme/"
+        submenu: true
+        tree:
+          programme:
+            title: "programme"
+            url: "/en/about/sponsorship/programme/"
+          faq:
+            title: "FAQ"
+            url: "/en/about/sponsorship/faq/"
       supporters:
         title: "Desarrolladores"
         url:   "/en/supporters"
@@ -142,6 +216,12 @@ es:
        optin-rbf:
          title: "Opt-in RBF"
          url: "/en/faq/optin_rbf"
+       compact-blocks:
+         title: "Compact Blocks"
+         url: "/en/2016/06/07/compact-blocks-faq/"
+       version-bits:
+         title: "Version Bits (BIP9)"
+         url: "/en/2016/06/08/version-bits-miners-faq/"
   dev:
     title: "Programación"
     submenu: true
@@ -164,19 +244,43 @@ es:
       eol:
         title: "Lifecycle"
         url:   "/en/lifecycle"
+  contact:
+      title: "Contact"
+      submenu: true
+      tree:
+        contact_us:
+          title: "Contact Us"
+          url: "/en/contact"
+        announcements:
+          title: "Announcements"
+          url: "/en/list/announcements/join"
 fr:
   home:
     title: "Bitcoin Core"
     url:   "/fr/"
   about:
-    title: "à propos"
+    title: "À propos"
     submenu: true
     tree:
       about:
-        title: "à propos de nous"
+        title: "À propos de nous"
         url:   "/fr/about/"
+      team:
+        title: "L'équipe"
+        url:   "/fr/team/"
+      projects:
+        title: "Parrainage"
+        url: "/fr/about/sponsorship/programme/"
+        submenu: true
+        tree:
+          programme:
+            title: "programme"
+            url: "/fr/about/sponsorship/programme/"
+          faq:
+            title: "FAQ"
+            url: "/fr/about/sponsorship/faq/"
       supporters:
-        title: "soutiens"
+        title: "Soutiens"
         url:   "/en/supporters"
   blog:
     title: "blog"
@@ -195,20 +299,26 @@ fr:
          title: "SegWit"
          url: "/fr/2016/01/26/segwit-benefits"
        optin-rbf:
-         title: "opt-in RBF"
+         title: "Opt-in RBF"
          url: "/fr/faq/optin_rbf"
+       compact-blocks:
+         title: "Compact Blocks"
+         url: "/en/2016/06/07/compact-blocks-faq/"
+       version-bits:
+         title: "Version Bits (BIP9)"
+         url: "/en/2016/06/08/version-bits-miners-faq/"
   dev:
-    title: "Développment"
+    title: "Développement"
     submenu: true
     tree:
       contribute:
         title: "contribuer"
         url:   "/fr/contribute"
       contribute-code:
-        title: "contributing code"
-        url:   "/en/faq/contributing-code"
+        title: "contribuer au code"
+        url:   "/fr/faq/contributing-code"
       segwit:
-        title: "adoption de SegWit"
+        title: "Adoption de SegWit"
         url:   "/en/segwit_adoption"
       meetings:
         title: "réunions"
@@ -219,6 +329,16 @@ fr:
       eol:
         title: "Cycle de vie"
         url:   "/fr/lifecycle"
+  contact:
+      title: "Contact"
+      submenu: true
+      tree:
+        contact_us:
+          title: "Nous contacter"
+          url: "/fr/contact"
+        announcements:
+          title: "Communiqués"
+          url: "/fr/list/announcements/join"
 it:
   home:
     title: "Bitcoin Core"
@@ -230,6 +350,20 @@ it:
       about:
         title: "About Us"
         url:   "/it/about/"
+      team:
+        title: "Team"
+        url:   "/en/team/"
+      projects:
+        title: "Sponsorship"
+        url: "/en/about/sponsorship/programme/"
+        submenu: true
+        tree:
+          programme:
+            title: "programme"
+            url: "/en/about/sponsorship/programme/"
+          faq:
+            title: "FAQ"
+            url: "/en/about/sponsorship/faq/"
       supporters:
         title: "Supporters"
         url:   "/en/supporters"
@@ -252,6 +386,12 @@ it:
        optin-rbf:
          title: "Opt-in RBF"
          url: "/en/faq/optin_rbf"
+       compact-blocks:
+         title: "Compact Blocks"
+         url: "/en/2016/06/07/compact-blocks-faq/"
+       version-bits:
+         title: "Version Bits (BIP9)"
+         url: "/en/2016/06/08/version-bits-miners-faq/"
   dev:
     title: "Development"
     submenu: true
@@ -274,6 +414,16 @@ it:
       eol:
         title: "Lifecycle"
         url:   "/en/lifecycle"
+  contact:
+      title: "Contact"
+      submenu: true
+      tree:
+        contact_us:
+          title: "Contact Us"
+          url: "/en/contact"
+        announcements:
+          title: "Announcements"
+          url: "/en/list/announcements/join"
 ru:
   home:
     title: "Bitcoin Core"
@@ -285,6 +435,20 @@ ru:
       about:
         title: "About Us"
         url:   "/ru/about/"
+      team:
+        title: "Team"
+        url:   "/en/team/"
+      projects:
+        title: "Sponsorship"
+        url: "/en/about/sponsorship/programme/"
+        submenu: true
+        tree:
+          programme:
+            title: "programme"
+            url: "/en/about/sponsorship/programme/"
+          faq:
+            title: "FAQ"
+            url: "/en/about/sponsorship/faq/"
       supporters:
         title: "Supporters"
         url:   "/en/supporters"
@@ -307,6 +471,12 @@ ru:
        optin-rbf:
          title: "Opt-in RBF"
          url: "/en/faq/optin_rbf"
+       compact-blocks:
+         title: "Compact Blocks"
+         url: "/en/2016/06/07/compact-blocks-faq/"
+       version-bits:
+         title: "Version Bits (BIP9)"
+         url: "/en/2016/06/08/version-bits-miners-faq/"
   dev:
     title: "Development"
     submenu: true
@@ -329,6 +499,16 @@ ru:
       eol:
         title: "Lifecycle"
         url:   "/en/lifecycle"
+  contact:
+      title: "Contact"
+      submenu: true
+      tree:
+        contact_us:
+          title: "Contact Us"
+          url: "/en/contact"
+        announcements:
+          title: "Announcements"
+          url: "/en/list/announcements/join"
 zh_CN:
   home:
     title: "Bitcoin Core"
@@ -340,6 +520,20 @@ zh_CN:
       about:
         title: "About Us"
         url:   "/zh_CN/about/"
+      team:
+        title: "Team"
+        url:   "/en/team/"
+      projects:
+        title: "Sponsorship"
+        url: "/en/about/sponsorship/programme/"
+        submenu: true
+        tree:
+          programme:
+            title: "programme"
+            url: "/en/about/sponsorship/programme/"
+          faq:
+            title: "FAQ"
+            url: "/en/about/sponsorship/faq/"
       supporters:
         title: "Supporters"
         url:   "/en/supporters"
@@ -362,6 +556,12 @@ zh_CN:
        optin-rbf:
          title: "Opt-in RBF"
          url: "/en/faq/optin_rbf"
+       compact-blocks:
+         title: "Compact Blocks"
+         url: "/en/2016/06/07/compact-blocks-faq/"
+       version-bits:
+         title: "Version Bits (BIP9)"
+         url: "/en/2016/06/08/version-bits-miners-faq/"
   dev:
     title: "Development"
     submenu: true
@@ -384,6 +584,16 @@ zh_CN:
       eol:
         title: "Lifecycle"
         url:   "/en/lifecycle"
+  contact:
+      title: "Contact"
+      submenu: true
+      tree:
+        contact_us:
+          title: "Contact Us"
+          url: "/en/contact"
+        announcements:
+          title: "Announcements"
+          url: "/en/list/announcements/join"
 zh_TW:
   home:
     title: "Bitcoin Core"
@@ -395,6 +605,20 @@ zh_TW:
       about:
         title: "About Us"
         url:   "/zh_TW/about/"
+      team:
+        title: "Team"
+        url:   "/en/team/"
+      projects:
+        title: "Sponsorship"
+        url: "/en/about/sponsorship/programme/"
+        submenu: true
+        tree:
+          programme:
+            title: "programme"
+            url: "/zh_TW/about/sponsorship/programme/"
+          faq:
+            title: "FAQ"
+            url: "/zh_TW/about/sponsorship/faq/"
       supporters:
         title: "Supporters"
         url:   "/en/supporters"
@@ -417,6 +641,12 @@ zh_TW:
        optin-rbf:
          title: "Opt-in RBF"
          url: "/en/faq/optin_rbf"
+       compact-blocks:
+         title: "Compact Blocks"
+         url: "/en/2016/06/07/compact-blocks-faq/"
+       version-bits:
+         title: "Version Bits (BIP9)"
+         url: "/en/2016/06/08/version-bits-miners-faq/"
   dev:
     title: "Development"
     submenu: true
@@ -439,3 +669,13 @@ zh_TW:
       eol:
         title: "Lifecycle"
         url:   "/en/lifecycle"
+  contact:
+      title: "Contact"
+      submenu: true
+      tree:
+        contact_us:
+          title: "Contact Us"
+          url: "/en/contact"
+        announcements:
+          title: "Announcements"
+          url: "/en/list/announcements/join"

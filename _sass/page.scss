@@ -251,6 +251,13 @@ $button-size: 1.5rem;
 	display: block;
 	padding:0;
 	padding-top: 0.3em;
+	overflow: visible;
+}
+
+.nav li ul li ui, .nav li:hover ul li ul {
+	display: inline-block;
+	width: inherit;
+	display: none;
 }
 
 .nav li:hover a {
@@ -295,7 +302,7 @@ li.lang:hover {
 
 .nav li:hover ul li
 {
-	width:100%;
+	width:88%;
 	padding-left:0.6em;
 	padding-right:0.3em;
 }
@@ -305,8 +312,9 @@ li.lang:hover {
 	background-color: $black;
 	display: block;
 	color: $white;
+	position: relative;
 	a {
-		color: $white;
+		color: $black;
 	}
 	@media #{$small} {
 		background-color: $black;
@@ -314,6 +322,54 @@ li.lang:hover {
 		color: $white;
 		a {
 			color: $white;
+		}
+	}
+}
+
+.nav li ul li:hover ul {
+	display: block;
+	background-color: $white;
+	padding:0;
+	padding-top: 0.3em;
+	position: relative;
+	color: $black;
+	@include border-radius(0,0,0,0);
+	@media #{$small} {
+		position: absolute;
+		left: 80%;
+		top:0;
+		z-index: 10;
+	}
+}
+
+.nav li:hover ul li:hover ul li {
+		background-color: transparent;
+}
+.nav li:hover ul li:hover ul li:hover {
+	    background-color: $black;
+		color: $white;
+		a {
+			color: $white;
+			&:visited, &:hover, &:focus, &:hover, &:active {
+				color: $white;
+			}
+		}
+}
+	
+.nav li:hover ul li:hover ul li {
+	color: $black;
+	a {
+		color: $black;
+		&:visited, &:hover, &:focus, &:hover, &:active {
+			color: $black;
+		}
+	}
+	@media #{$small} {
+		a {
+			color: $black;
+			&:visited, &:hover, &:focus, &:hover, &:active {
+				color: $black;
+			}
 		}
 	}
 }
@@ -451,6 +507,7 @@ li.lang:hover {
 .image-wrap {
 	position: relative;
 	margin-bottom: 2em;
+	z-index: -1;
 	@include clearfix;
 	&:after {
 		content: " ";
@@ -975,4 +1032,58 @@ Show your support page
 
 .show-your-support-small {
 	margin-top: 2em;
+}
+
+#mailregform
+{
+	@include clearfix;
+	
+	input {
+		padding: 0.5em 0.5em;
+		float: left;
+		border-color: lighten($black,70);
+	}
+	#email {
+		@include border-radius(0px, 0px, 5px, 5px);
+		width: 60%;
+		@media #{$small} {
+			width: 250px;
+		}
+	}
+	#submit {
+		width: 25%;
+		@media #{$small} {
+			width: 90px;
+		}
+		border-left:0px;
+		@include border-radius(5px, 5px, 0px, 0px);
+		background-color: darken($white, 2);
+		&:hover {
+			background-color: darken($white, 20);
+			border-color: lighten($black,70);
+		}
+	}
+}
+
+ul.team {
+	@include clearfix;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		height: 300px;
+		min-height: 300px;
+		float: left;
+		@media #{$small} {
+			@include grid(12,4.5);
+		}
+	}
+	li:nth-child(even)
+	{
+		float: right;
+	}
+}
+
+div.maintainers {
+	margin-bottom: 1.5em;
 }

@@ -8,6 +8,9 @@ en:
   not_translated: "Note: this page has not been translated"
   tocoverview: "Overview"
   translation_outdated: "This translation may be out of date. Please compare with the English version."
+  rss_feed: "Bitcoin Core Blog RSS Feed"
+  rss_meetings_feed: "Meetings feed"
+  rss_blog_feed: "Blog posts feed"
 
 de:
   created: "Veröffentlicht am"
@@ -19,6 +22,9 @@ de:
   not_translated: "Hinweis: Diese Seite wurde nicht übersetzt"
   tocoverview: "Inhaltsverzeichnis"
   translation_outdated: "Diese Übersetzung kann veraltet sein. Vergleichen Sie bitte mit der englischen Version."
+  rss_feed: "Bitcoin Core Blog RSS Feed"
+  rss_meetings_feed: "Meetings feed"
+  rss_blog_feed: "Blog posts feed"
 
 es:
   created: "Publicado el"
@@ -30,17 +36,23 @@ es:
   not_translated: "Nota: esta página no ha sido traducida"
   tocoverview: "Overview"
   translation_outdated: "Esta traducción se puede estar fuera de fecha. Por favor compare con la versión Inglés."
+  rss_feed: "Bitcoin Core Blog RSS Feed"
+  rss_meetings_feed: "Meetings feed"
+  rss_blog_feed: "Blog posts feed"
 
 fr:
   created: "Publié le"
   author: "par"
-  description: "Site Bitcoin Core"
+  description: "Site web Bitcoin Core"
   footer: "Projet Bitcoin Core"
   related: "Recommandé"
   viewallposts: "Voir tout"
   not_translated: "Note: cette page n'a pas encore été traduite"
   tocoverview: "Sommaire"
-  translation_outdated: "Cette traduction peut être obsolète. S'il vous plaît de comparer avec la version anglaise."
+  translation_outdated: "Cette traduction est probablement obsolète.  Veuillez consulter la version anglaise."
+  rss_feed: "Flux RSS du Blog Bitcoin Core"
+  rss_meetings_feed: "Flux des réunions"
+  rss_blog_feed: "Flux des posts du blog"
 
 it:
   created: "Published on the"
@@ -52,6 +64,9 @@ it:
   not_translated: "Nota: questa pagina non è stato tradotto"
   tocoverview: "Overview"
   translation_outdated: "Questa traduzione può essere aggiornato. Si prega di confrontare con la versione inglese."
+  rss_feed: "Bitcoin Core Blog RSS Feed"
+  rss_meetings_feed: "Meetings feed"
+  rss_blog_feed: "Blog posts feed"
 
 ru:
   created: "Published on the"
@@ -63,17 +78,23 @@ ru:
   not_translated: "Примечание: Эта страница не была переведена"
   tocoverview: "Overview"
   translation_outdated: "Этот перевод может быть устаревшим. Пожалуйста, сравните с английской версией."
+  rss_feed: "Bitcoin Core Blog RSS Feed"
+  rss_meetings_feed: "Meetings feed"
+  rss_blog_feed: "Blog posts feed"
 
-zh_CH:
-  created: "发表于"
-  author: "作者"
-  description: "Bitcoin Core 网站"
-  footer: "Bitcoin Core 计划"
-  recommended: "推荐阅读"
-  viewallposts: "顯示所有文章"
-  not_translated: "注意：本页未被翻译"
-  tocoverview: "Overview"
-  translation_outdated: "This translation may be out of date compared to the English version"
+zh_CN:
+  created: "发布在"
+  authored: "由"
+  description: "比特币核心网站"
+  footer: "比特币核心项目"
+  recommended: "推荐"
+  viewallposts: "查看所有帖子"
+  not_translated: "注：该页尚未被翻译"
+  tocoverview: "总览"
+  translation_outdated: "这段翻译可能已过期。请对照英文原版."
+  rss_feed: "Bitcoin Core Blog RSS Feed"
+  rss_meetings_feed: "Meetings feed"
+  rss_blog_feed: "Blog posts feed"
 
 zh_TW:
   created: "發表於"
@@ -85,3 +106,6 @@ zh_TW:
   not_translated: "注意：本頁未被翻譯"
   tocoverview: "Overview"
   translation_outdated: "This translation may be out of date compared to the English version"
+  rss_feed: "Bitcoin Core Blog RSS Feed"
+  rss_meetings_feed: "Meetings feed"
+  rss_blog_feed: "Blog posts feed"

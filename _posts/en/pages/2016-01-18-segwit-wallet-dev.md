@@ -1,5 +1,5 @@
 ---
-version: 1
+version: 2
 title: Segregated Witness Wallet Development Guide
 name: segwit-wallet-dev
 type: pages
@@ -19,6 +19,12 @@ Native witness program is defined as a <code>scriptPubKey</code> with a single b
 #### Witness program nested in P2SH
 
 Witness program nested in P2SH is a P2SH output with a <code>redeemScript</code> of a single byte push (<code>OP_0</code>, <code>OP_1</code>, ...,  <code>OP_16</code>) followed by a push of 2 to 32 bytes.
+
+## Network services
+
+Segregated witness capable nodes will advertise that they can provide witnesses through the following service bit:
+
+<pre><code>NODE_WITNESS = (1 << 3)</code></pre>
 
 ### Transaction Serialization
 
@@ -93,7 +99,7 @@ To spend a P2SH-P2WPKH output, the <code>scriptSig</code> MUST contain a push of
 <pre><code>scriptSig (23 bytes): < OP_0 < 20-byte-pubkey-hash > >
 witness: < sig > < pubkey ></code></pre>
   
-where the <code>RIPEMD160(SHA256(pubkey))</code> is equal to the <code>20-byte-pubkey-hash</code>, and <code>RIPEMD160(0x0014{20-byte-pubkey-hash})</code> is equal to the <code>20-byte-script-hash</code>.
+where the <code>RIPEMD160(SHA256(pubkey))</code> is equal to the <code>20-byte-pubkey-hash</code>, and <code>RIPEMD160(SHA256(0x0014{20-byte-pubkey-hash}))</code> is equal to the <code>20-byte-script-hash</code>.
   
 #### Pay-to-Witness-Script-Hash (P2WSH)
 P2WSH is another new standard script defined in BIP141. Similar to P2SH, it allows payment to arbitrarily complex scripts. The format is:
@@ -104,7 +110,7 @@ To spend a P2WSH output, the <code>scriptSig</code> MUST be empty, and the witne
 
 <pre><code>witness: <...> <...> <...> < witnessScript ></code></pre>
 
-where the <code>RIPEMD160(SHA256(witnessScript))</code> is equal to the <code>32-byte-script-hash</code> in scriptPubKey. The <code>witnessScript</code> is deserialized and evaluated with the remaining data in the <code>witness</code>.
+where the <code>SHA256(witnessScript)</code> is equal to the <code>32-byte-script-hash</code> in scriptPubKey. The <code>witnessScript</code> is deserialized and evaluated with the remaining data in the <code>witness</code>.
 
 
 #### P2WSH in P2SH (P2SH-P2WSH)
@@ -117,7 +123,7 @@ To spend a P2SH-P2WSH output, the <code>scriptSig</code> MUST contain a push of 
 <pre><code>scriptSig (35 bytes): < OP_0 < 32-byte-script-hash > > \
 witness: <...> <...> <...> < witnessScript ></code></pre>
 
-where the <code>SHA256(witnessScript)</code> is equal to the <code>32-byte-script-hash</code>, and <code>RIPEMD160(0x0020{32-byte-script-hash})</code> is equal to the <code>20-byte-script-hash</code>.
+where the <code>SHA256(witnessScript)</code> is equal to the <code>32-byte-script-hash</code>, and <code>RIPEMD160(SHA256(0x0020{32-byte-script-hash}))</code> is equal to the <code>20-byte-script-hash</code>.
 
 ### New signing algorithm
 To spend a witness program output, a new signing algorithm MUST be used when producing the ECDSA signature. A step-by-step example could be found in BIP143.
